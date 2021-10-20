@@ -5,13 +5,21 @@
   Uncomment the answer underneath.
 */
 
+//const exclaim = function(str) {
+//   return str.toUpperCase() + '!!!'
+// }
+
+// arrow
+// const exclaim = str => str.toUpperCase() + '!!!';
+// declaration
+// function explaim(str) {
+  // return str.toUpperCase() + '!!!'
+// };
+
+// expression
 const exclaim = function(str) {
   return str.toUpperCase() + '!!!'
 }
-
-// arrow
-// declaration
-// expression
 
 
 
@@ -22,13 +30,15 @@ const exclaim = function(str) {
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
 
-// arrow
-// declaration
-// expression
+// // arrow
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
+
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -36,7 +46,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
+const exclaimTwo = str => str.toUpperCase() + '!!!'
 
 
 ////////// PROBLEM 3 //////////
@@ -50,9 +60,9 @@ function exclaimFour(str) {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+
 // declaration
-// expression
+
 
 
 
@@ -63,9 +73,9 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+const jsNinja = () => 'I am a JavaScript Ninja.'
 
-
-
+console.log(jsNinja());
 ////////// PROBLEM 5 //////////
 
 /*
@@ -78,8 +88,17 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => {
+  if (num1 > num2) {
+    return num1;
+  } else if( num1 < num2) {
+    return num2;
+  } else {
+    return num1 + num2;
+  };
+};
   
+console.log(compareNums(10, 10));
 ////////// PROBLEM 6 //////////
 
 /*
@@ -94,3 +113,6 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+
+const bestMovie = (movie) => `${movie} is the best movie ever!`;
+console.log(bestMovie('Fart'))
